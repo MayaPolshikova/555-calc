@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Hello Maya!</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Fablab NE555 Calculator </h1>
+        <select id="bgs" onchange="changeBg()">
+            <option value="f">Frequency calculator</option>
+            <option value="r">Resistance calculator</option>
+            <option value="d">Duty cycle calculator</option>
+        </select>
+
+        <div id="freq-div">
+             <p> Please enter Ra, Rb, C values: </p>
+             <input id="ra" type="number" class="txt" placeholder="Enter Ra value in Ohms"/>
+            <select id="sra" class="sel">
+            <option value = "1e0">Ohm</option>
+            <option value = "1e3">KOhm</option>
+            <option value = "1e6">MOhm</option>
+            </select>
+        <br/>
+
+        <input id="rb" type="number" class="txt" placeholder="Enter Rb value in Ohms"/>
+            <select id="srb" class="sel">
+            <option value = "1e0">Ohm</option>
+            <option value = "1e3">KOhm</option>
+            <option value = "1e6">MOhm</option>
+            </select>
+        <br/>
+
+        <input id="c" type="number" class="txt" placeholder="Enter C value in F"/>
+            <select id="src" class="sel">
+            <option value = "1e-9">nF</option>
+            <option value = "1e-6">uF</option>
+            </select>
+        <br/>
+
+            <button onclick="onButtonClick()" id="btn1">PRESS HERE TO BLOW UP THE COMPUTER</button>
+            <div id="results"></div>
+        </div>
+
+        <div id="r-div">
+            <p>Please enter C and F values: </p>
+            <input id="c2" type="number" class="txt" placeholder="Enter C value"/>
+            <select id="src2" class="sel">
+            <option value = "1e-9">nF</option>
+            <option value = "1e-6">uF</option>
+            </select>
+            <br/>
+
+            <input id="f" type="number" class="txt" placeholder="Enter Frequency"/>
+            <select id="sf" class="sel">
+            <option value = "1e0">Hz</option>
+            <option value = "1e3">KHz</option>
+            </select>
+            <br/>
+
+            <button onclick="onButtonClick2()" id="btn2"> PRESS HERE TO CANCEL THE DETONATION</button>
+            <div id="results2"></div>
+        </div>
+
+        <div id="D-div">
+            <p> Please enter Ra and Rb values: </p>
+             <input id="ra3" type="number" class="txt" placeholder="Enter Ra value"/>
+            <select id="sra3" class="sel">
+            <option value = "1e0">Ohm</option>
+            <option value = "1e3">KOhm</option>
+            <option value = "1e6">MOhm</option>
+            </select>
+        <br/>
+
+        <input id="rb3" type="number" class="txt" placeholder="Enter Rb value in Ohms"/>
+            <select id="srb3" class="sel">
+            <option value = "1e0">Ohm</option>
+            <option value = "1e3">KOhm</option>
+            <option value = "1e6">MOhm</option>
+            </select>
+        <br/>
+
+        <button onclick="onButtonClick3()" id="btn3">PRESS HERE TO [CENSORED]</button>
+            <div id="results3"></div>
+
+        </div>
+       
+    </body>
+    <script src="script.js">
+    </script>
+</html>
